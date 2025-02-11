@@ -1,3 +1,9 @@
 # WindowsFormsAppWithReact
 
 常见的使用前端html,css构建windows客户端有electron和tarui，这个项目使用winform .netframwork版本，然后通过webview2集成了react前端项目，react使用vite打包
+
+项目中只包含winform代码，需要手动在bin/debug目录里面创建一个文件夹，名字为ReactBuild，然后将react打包后的文件放进去就可以了
+可以自己改winform代码更改路径
+同时因为使用winform，可以使用自带的clickOnce更新，解决了更新的问题
+多少有点剑走偏锋，适合这种情况：就是需要兼容win7，需要访问win32 Api，团队成员后端语言是C#，前端会点react，但是不想学习xaml，说的好像是我本人哈哈，
+但是比webview封装一个网址来说少了后端服务器的资源占用，所以还是有点区别的。
