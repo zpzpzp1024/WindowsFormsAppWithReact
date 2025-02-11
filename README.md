@@ -1,1 +1,3 @@
 # WindowsFormsAppWithReact
+
+常见的使用前端html,css构建windows客户端有electron和tarui，这个项目使用winform .netframwork版本，然后通过webview2集成了react前端项目，react使用vite打包
